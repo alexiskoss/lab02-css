@@ -32,10 +32,12 @@ nav {
   color: #FFF;
 }
 nav ul {
+  display: inline;
   padding-left: 15px;
   margin-bottom: 0;
 }
 nav li {
+  display: inline;
   font-variant: small-caps;
 }
 nav a {
@@ -54,12 +56,15 @@ nav a:focus {
 header {
   padding-top: 3em;
   padding-right: 1em;
-  background-image: url(../img/background-sm.jpg);
+  background-image: url(../img/background-lg.jpg);
   min-height: 550px;
   color: #FFF;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header h1 {
   font-size: 3em;
+  text-align: right;
 }
 
 section {
@@ -81,6 +86,23 @@ section {
 
 #cafe {
   text-align: center;
+  background-color: #DFE1EB;
+}
+
+.motto {
+  text-align: right;
+}
+
+#cafe a:hover {
+  color: #D87E28;
+}
+
+#cafe h2 {
+  margin-bottom: 0px;
+}
+
+#cafe p {
+  margin-top: 0px;
 }
 
 dd {
@@ -91,6 +113,12 @@ dd {
   float: right;
   max-height: 400px;
   margin-left: 1em;
+  border-radius: 10px;
+}
+
+#story {
+  overflow: auto;
+  background-color: #DFE1EB;
 }
 
 footer {
@@ -98,8 +126,18 @@ footer {
   padding-bottom: 0.5em;
   font-size: 12px;
   background-color: #afb3c2;
+  clear: both;
+  bottom: 0px;
+  border-top: 3px solid #D87E28;
+}
+#headline {
+  text-align: center;
 }
 
-#headline p {
-  text-align: left;
+#menu h3, dl {
+  margin-left: 300px;
+}
+
+footer p:last-child {
+  text-align: right;
 }
